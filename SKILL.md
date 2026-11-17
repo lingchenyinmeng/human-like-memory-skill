@@ -18,6 +18,10 @@ description: 查铃光（AstrBot 机器人）的记忆库和人格库。用户�
 
 **三个库都是 SQLite，只读查询用 `mode=ro`，改之前先备份。**
 
+**绝对路径不用记**：`scripts/paths.py` 会自动找 AstrBot 根目录，顺序是
+环境变量 `ASTRBOT_HOME` → 本 skill 的 `config.json` → 常见安装位置。
+找不到时脚本会直接告诉你该设哪个变量，不会瞎猜一个路径然后失败。
+
 ## 常用脚本
 
 `<S>` = 本 skill 的 `scripts/` 完整路径。
